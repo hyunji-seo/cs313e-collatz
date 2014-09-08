@@ -49,6 +49,18 @@ class TestCollatz (TestCase) :
     def test_eval_4 (self) :
         v = collatz_eval(900, 1000)
         self.assertEqual(v, 174)
+    # ---------------------------
+    # corner case
+    def test_eval_5 (self) :
+        v = collatz_eval(1, 1)
+        self.assertEqual(v, 1)
+    # unsorted pair
+    def test_eval_6 (self) :
+        v = collatz_eval(10, 1)
+        self.assertEqual(v, 20)
+    def test_eval_7 (self) :
+        v = collatz_eval(999999, 5000)
+        self.assertEqual(v, )
 
     # -----
     # print
@@ -68,6 +80,17 @@ class TestCollatz (TestCase) :
         w = StringIO()
         collatz_solve(r, w)
         self.assertEqual(w.getvalue(), "1 10 1\n100 200 1\n201 210 1\n900 1000 1\n")
+    # -------------------------------------
+    def test_solve (self) :
+        r = StringIO("1 10\n100 200\n201 210\n900 1000\n1 1\n")
+        w = StringIO()
+        collatz_solve(r, w)
+        self.assertEqual(w.getvalue(), "1 10\n100 200\n201 210\n900 1000\n1 1\n")
+    def test_solve (self) :
+        r = StringIO("1 10\n100 200\n201 210\n900 1000\n1 1\n10 1\n")
+        w = StringIO()
+        collatz_solve(r, w)
+        self.assertEqual(w.getvalue(), "1 10\n100 200\n201 210\n900 1000\n1 1\n10 1\n")
 
 # ----
 # main
