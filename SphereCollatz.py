@@ -67,6 +67,24 @@ def cycle_length (n):
             c += 2
     assert c > 0
     return c
+
+def cache_cycle_length(n):
+    assert n > 0 and n < 1000000
+    global cache
+
+    count = 1
+
+    while n != 1:
+        if (cache[n] != 0):
+            count = cache[n] - 1
+            n = 1
+        else:
+            n = n + (n // 1) + 1
+            count += 2
+    count = cache[n]
+    assert count > 0
+    return count
+
 # -------------
 # collatz_print
 # -------------
@@ -98,6 +116,8 @@ def collatz_solve (r, w) :
         v = collatz_eval(i, j)
         collatz_print(w, i, j, v)
 #!/usr/bin/env python3
+
+
 
 # ------------------------------
 # projects/collatz/RunCollatz.py
