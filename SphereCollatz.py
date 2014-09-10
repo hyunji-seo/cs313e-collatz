@@ -6,6 +6,7 @@
 # Glenn P. Downing
 # ---------------------------
 
+
 # ------------
 # collatz_read
 # ------------
@@ -38,12 +39,14 @@ def collatz_eval (i, j) :
 
     if i > j:
         i, j = j, i
+    assert i <= j
+
+    # Optimization 2
+    m = int((j/2) + 1)
+    if i < m:
+        i = m
 
     # find max cycle length
-    m = (e/2) + 1
-    if i < m:
-        collatz_eval (i, m)
-
     max_cycle = 1
     for n in range(i, j):
         if max_cycle < cycle_length(n):
@@ -59,6 +62,7 @@ def cycle_length (n):
             n = (n // 2)
             c += 1
         else :
+            # Optimization 1
             n = n + (n//2) + 1
             c += 2
     assert c > 0
