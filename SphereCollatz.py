@@ -47,43 +47,37 @@ def collatz_eval (i, j) :
         i = m
 
     # find max cycle length
-    max_cycle = 1
-    for n in range(i, j):
-        if max_cycle < cycle_length(n):
-            max_cycle = cycle_length(n)
-    return max_cycle
-
-#cycle length function
-def cycle_length (n):
-    assert n > 0
-    c = 1
-    while n > 1 :
-        if (n % 2) == 0 :
-            n = (n // 2)
-            c += 1
-        else :
-            # Optimization 1
-            n = n + (n//2) + 1
-            c += 2
-    assert c > 0
-    return c
-
-def cache_cycle_length(n):
-    assert n > 0 and n < 1000000
     global cache
+    for n in range(i, j + 1):
+        max_cycle = 1
+        #cycle length function
+        assert n > 0
+        cache = {1:1}
+        # c = cycle length
+        c = 1
+        if (i == 1) and (j == 1):
+            return 1
+        while n > 1:
+            if n not in cache:
+                return (n)
+            else:
+                cache[n] = c
+                if (n % 2) == 0 :
+                    n = (n // 2)
+                    c += 1
+                else:
+                    # Optimization 1
+                    n = n + (n//2) + 1
+                    c += 2
+            assert c > 0
+            return (c)
 
-    count = 1
+        # max cycle
+        if max_cycle < c:
+            max_cycle = c
+        return (max_cycle)
+    
 
-    while n != 1:
-        if (cache[n] != 0):
-            count = cache[n] - 1
-            n = 1
-        else:
-            n = n + (n // 1) + 1
-            count += 2
-    count = cache[n]
-    assert count > 0
-    return count
 
 # -------------
 # collatz_print

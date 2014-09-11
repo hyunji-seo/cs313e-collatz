@@ -50,17 +50,24 @@ class TestCollatz (TestCase) :
         v = collatz_eval(900, 1000)
         self.assertEqual(v, 174)
     # ---------------------------
-    # corner case
     def test_eval_5 (self) :
         v = collatz_eval(1, 1)
         self.assertEqual(v, 1)
-    # unsorted pair
     def test_eval_6 (self) :
         v = collatz_eval(10, 1)
         self.assertEqual(v, 20)
     def test_eval_7 (self) :
         v = collatz_eval(5, 5)
         self.assertEqual(v, 6)
+    def test_eval_8 (self) :
+        v = collatz_eval(14, 956)
+        self.assertEqual(v, 179)
+    def test_eval_9 (self) :
+        v = collatz_eval(21, 809)
+        self.assertEqual(v, 171)
+    def test_eval_10 (self) :
+        v = collatz_eval(989, 77)
+        self.assertEqual(v, 179)
 
 
     # -----
