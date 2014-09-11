@@ -34,50 +34,44 @@ def collatz_eval (i, j) :
     return the max cycle length of the range [i, j]
     """
     # <your code>
+
+    global cache
+    cache = {1:1}
+
     assert i > 0 and i < 1000000
     assert j > 0 and j < 1000000
 
+    # ordered pairs
     if i > j:
         i, j = j, i
-    assert i <= j
 
     # Optimization 2
-    m = int((j/2) + 1)
-    if i < m:
-        i = m
+    if i < (j//2) + 1:
+        m = (j//2) + 1
+    else:
+        m = i
 
     # find max cycle length
-    global cache
-    for n in range(i, j + 1):
-        max_cycle = 1
-        #cycle length function
-        assert n > 0
-        cache = {1:1}
+    for n in range(m, j + 1):
+        # temp = temporary value
+        temp = n
+        # cycle length function
         # c = cycle length
         c = 1
-        if (i == 1) and (j == 1):
-            return 1
-        while n > 1:
-            if n not in cache:
-                return (n)
+        while n > 1 :
+            if (n % 2) == 0 :
+                c += 1
+                n = (n // 2)
             else:
-                cache[n] = c
-                if (n % 2) == 0 :
-                    n = (n // 2)
-                    c += 1
-                else:
-                    # Optimization 1
-                    n = n + (n//2) + 1
-                    c += 2
-            assert c > 0
-            return (c)
-
-        # max cycle
-        if max_cycle < c:
-            max_cycle = c
-        return (max_cycle)
-    
-
+                # Optimization 1
+                c += 2
+                n = n + (n//2) + 1
+        # add to cache
+        cache[temp] = c
+        v = (temp)
+    assert c > 0
+    # max cycle
+    return max(cache.values())
 
 # -------------
 # collatz_print
