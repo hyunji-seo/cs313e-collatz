@@ -1,0 +1,191 @@
+commit 3ec2be0467addbffd3830a63df47b4a713931ce4
+Author: Hyun Seo <hjseo767@gmail.com>
+Date:   Thu Sep 11 17:25:43 2014 -0500
+
+    updated TestCollatz
+
+commit cd8747b3d6b506daaf814c2834455240cbc8e56c
+Author: Hyun Seo <hjseo767@gmail.com>
+Date:   Thu Sep 11 16:46:21 2014 -0500
+
+    add Collatz.html
+
+commit 4fbabb5340cf0044d34b47c1ddad6ed64e5a80d4
+Author: Hyun Seo <hjseo767@gmail.com>
+Date:   Wed Sep 10 02:09:29 2014 -0500
+
+    update Collatz and Test Collatz, add SphereCollatz
+
+commit 82c13a5ca7cea751e5be6cb30a7cdddd5eb2c73c
+Author: Hyun Seo <hjseo767@gmail.com>
+Date:   Wed Sep 10 02:07:46 2014 -0500
+
+    update
+
+commit ed418756698a8a3097b7e700f0b4abc4616e5bf2
+Author: Hyun Seo <hjseo767@gmail.com>
+Date:   Mon Sep 8 15:51:31 2014 -0500
+
+    added more unit tests
+
+commit 0b5fdba278bebe21202e3e8fee39db9d18c67352
+Author: Hyun Seo <hjseo767@gmail.com>
+Date:   Mon Sep 8 13:31:10 2014 -0500
+
+    fixed unit tests
+
+commit 94b83829e372bc67fdf741ab4b0bf2da5d0683a3
+Author: Hyun Seo <hjseo767@gmail.com>
+Date:   Sun Sep 7 21:43:28 2014 -0500
+
+    update 1
+
+commit 921176851a99fc9db99d76bdfcee7597ab92eb77
+Author: Hyun Seo <hjseo767@gmail.com>
+Date:   Sun Sep 7 20:36:00 2014 -0500
+
+    all programs
+
+commit 66585a1589af1910acf6b2da07dc78dec91578bc
+Author: hyunji-seo <hjseo767@gmail.com>
+Date:   Sun Sep 7 20:16:44 2014 -0500
+
+    S.11 confirm success
+
+commit c331e166e3fcc2fd65e5bbd75b25cd3d9385d3ba
+Author: hyunji-seo <hyunji-seo@users.noreply.github.com>
+Date:   Sun Sep 7 12:44:44 2014 -0500
+
+    Delete makefile
+
+commit c52fbd1153141e1799d513a5a473124799b8e862
+Author: hyunji-seo <hyunji-seo@users.noreply.github.com>
+Date:   Sun Sep 7 12:44:29 2014 -0500
+
+    Delete TestCollatz.py
+
+commit a6dfc753b29e3b4553c33f87cf449206960e3560
+Author: hyunji-seo <hyunji-seo@users.noreply.github.com>
+Date:   Sun Sep 7 12:44:13 2014 -0500
+
+    Delete TestCollatz.out.txt
+
+commit b98fcb73977887a37f278d241c01c95f67473dd4
+Author: hyunji-seo <hyunji-seo@users.noreply.github.com>
+Date:   Sun Sep 7 12:44:07 2014 -0500
+
+    Delete RunCollatz.py
+
+commit 2d39f83ea620877d257d0c2f5cec87cb4715ed7d
+Author: hyunji-seo <hyunji-seo@users.noreply.github.com>
+Date:   Sun Sep 7 12:44:01 2014 -0500
+
+    Delete RunCollatz.out.txt
+
+commit 3dd9bf25e079e421335d464fe3056ffceb226677
+Author: hyunji-seo <hyunji-seo@users.noreply.github.com>
+Date:   Sun Sep 7 12:43:54 2014 -0500
+
+    Delete RunCollatz.in.txt
+
+commit bfb634cda1c100825547b7b85ff83e6e78140d4b
+Author: hyunji-seo <hyunji-seo@users.noreply.github.com>
+Date:   Sun Sep 7 12:43:42 2014 -0500
+
+    Delete Collatz.py
+
+commit 9e14238a00c85e0e60754e07b28d3fb5fccef471
+Author: hyunji-seo <hyunji-seo@users.noreply.github.com>
+Date:   Sun Sep 7 12:42:27 2014 -0500
+
+    Delete UnitTests2.py
+
+commit f9eac1fb135215f84c867ca562d44b386f816643
+Author: hyunji-seo <hyunji-seo@users.noreply.github.com>
+Date:   Sun Sep 7 12:42:17 2014 -0500
+
+    Delete UnitTests1.py
+
+commit a0edaecb6977953c740e81181b74f66dc9754a4c
+Author: hyunji-seo <hyunji-seo@users.noreply.github.com>
+Date:   Sun Sep 7 12:42:07 2014 -0500
+
+    Delete Hello.py
+
+commit 74265f6f7384d334a91328b61ded2b2e55931355
+Author: hyunji-seo <hyunji-seo@users.noreply.github.com>
+Date:   Sun Sep 7 12:41:55 2014 -0500
+
+    Delete Exceptions.py
+
+commit 8d2d956f52daa4e64aa9ff9ac5fdc7a5dd013219
+Author: hyunji-seo <hyunji-seo@users.noreply.github.com>
+Date:   Sun Sep 7 12:41:45 2014 -0500
+
+    Delete Coverage3.py
+
+commit eb544c9511b96bf820185016b7009fa2688a9195
+Author: hyunji-seo <hyunji-seo@users.noreply.github.com>
+Date:   Sun Sep 7 12:41:37 2014 -0500
+
+    Delete Coverage2.py
+
+commit 2fdd286f1da01bfb72146a4e3a5e6174df77727e
+Author: hyunji-seo <hyunji-seo@users.noreply.github.com>
+Date:   Sun Sep 7 12:41:32 2014 -0500
+
+    Delete Coverage1.py
+
+commit c34c48f2ec2daaf3cda4febeb2910f1eb78662af
+Author: hyunji-seo <hyunji-seo@users.noreply.github.com>
+Date:   Sun Sep 7 12:37:35 2014 -0500
+
+    Delete Assertions.py
+
+commit 4fb9584175469d5a677e0b69ba801be3eb03b634
+Author: Hyun Seo <hjseo767@gmail.com>
+Date:   Wed Sep 3 18:45:32 2014 -0500
+
+    first commit
+
+commit 532db356f79ba086aab324eb173e4299ad51300a
+Author: Glenn Downing <downing@cs.utexas.edu>
+Date:   Tue Sep 2 07:07:34 2014 -0500
+
+    another commit
+
+commit 2e137079ed236d8e23e496a1c72ac017428b88f2
+Author: Glenn Downing <downing@cs.utexas.edu>
+Date:   Tue Sep 2 07:04:14 2014 -0500
+
+    another commit
+
+commit 59de92af935071e50b65139dfae8a84f2c051c8a
+Author: Glenn Downing <downing@cs.utexas.edu>
+Date:   Tue Sep 2 06:57:19 2014 -0500
+
+    another commit
+
+commit 1438cb1ecf5200db34a81dfc12b881c41e832c41
+Author: Glenn Downing <downing@cs.utexas.edu>
+Date:   Mon Sep 1 11:00:32 2014 -0500
+
+    another commit
+
+commit 093a405d9e6c01b13b6ca56a1b2d3f2c7b6eda4b
+Author: Glenn Downing <downing@cs.utexas.edu>
+Date:   Sat Aug 30 19:54:28 2014 -0500
+
+    another commit
+
+commit ec9fd503ec040bee23d5dac000fb43d7b463f9f3
+Author: Glenn Downing <downing@cs.utexas.edu>
+Date:   Tue Aug 26 21:58:32 2014 -0500
+
+    another commit
+
+commit fdef145ebfff4c568353178273fc933105312f00
+Author: Glenn Downing <downing@cs.utexas.edu>
+Date:   Tue Aug 26 21:58:21 2014 -0500
+
+    first commit

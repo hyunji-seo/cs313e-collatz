@@ -32,6 +32,18 @@ def collatz_eval (i, j) :
     i the beginning of the range, inclusive
     j the end       of the range, inclusive
     return the max cycle length of the range [i, j]
+    ---my code---
+    make a global cache
+    assert range of i, j
+    if i > j, swap
+    Optimization - shorten the range by accounting for mapped numbers
+    Find max cycle function
+    Create a temporary value
+    Create a counter variable to keep count of cycle length
+    while n  > 1, separate n by even/ordered -- implement optimization for odd numbers
+    Add to cache
+    assert cycle length > 0
+    Return max cycle
     """
     # <your code>
 
